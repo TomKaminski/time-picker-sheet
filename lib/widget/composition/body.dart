@@ -146,6 +146,7 @@ class _TimePickerBodyState extends State<TimePickerBody> {
     final provider = TimePickerProvider.of(context);
 
     return Column(
+      mainAxisSize: MainAxisSize.min,
       children: [
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -208,7 +209,6 @@ class _TimePickerBodyState extends State<TimePickerBody> {
             ),
           ],
         ),
-        const Expanded(child: SizedBox.shrink()),
         Padding(
           padding: const EdgeInsets.all(16),
           child: SizedBox(
